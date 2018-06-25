@@ -6,3 +6,6 @@ characterization by Bayesian analysis combined with global sensitivity analysis 
 
 The UQ folder contains R scripts to run the uncertainty quantification method (ABC-MCMC with copulas). The packages ks, VineCopula, MASS, and R.utils are required. The main script to run is called runABCMCMC-Phenotype123.R. 
 
+Th SA folder is currently being updated and will contain MATLAB scripts to run global sensitivity analysis and to perform entropy calculations. 
+
+
