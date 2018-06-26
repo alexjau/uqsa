@@ -22,6 +22,7 @@ library(ks)
 library(VineCopula)
 library(MASS)
 library(R.utils)
+library(R.matlab)
 
 ## use if on a cluster, changes to be made in 
 ## copulaFunctions.R, preCalibration.R and in this file
@@ -124,9 +125,10 @@ drawsA <- do.call("rbind", drawsA)
 pick <- !apply(drawsA, 1, function(rw) all(rw==0))
 drawsA <- drawsA[pick,]
 
-draws <- drawsA
-outFile <- sprintf('Draws-Phenotype1-ABCMCMC-Scale%d.RData', scale)
-save(draws, parNames, file=outFile)
+## to save output for each step 
+#draws <- drawsA
+#outFile <- sprintf('Draws-Phenotype1-ABCMCMC-Scale%d.RData', scale)
+#save(draws, parNames, file=outFile)
 
 ##############################
 ## Run MCMC for phenotype 2 ##
@@ -161,9 +163,10 @@ drawsB <- drawsB[pick,]
 pick <- apply(drawsB,1, function(u){out <- runModel(u, parIdx = parIdx, input = 10^xA, rInd = 'A');getMaxScore(xtarget[[1]], ytarget[[1]], out$xx, out$yy)}) <= delta
 drawsB <- drawsB[pick,]  
 
-draws <- drawsB
-outFile <- sprintf('Draws-Phenotype12-ABCMCMC-Scale%d.RData', scale)
-save(draws, parNames, file=outFile)
+## to save output for each step 
+#draws <- drawsB
+#outFile <- sprintf('Draws-Phenotype12-ABCMCMC-Scale%d.RData', scale)
+#save(draws, parNames, file=outFile)
 
 ##############################
 ## Run MCMC for phenotype 3 ##
@@ -204,3 +207,6 @@ drawsC1 <- drawsC1[pick1 & pick2,]
 draws <- drawsC1
 outFile <- sprintf('Draws-Phenotype123-Scale%d.RData', scale)
 save(draws, parNames, file=outFile)
+
+outFile <- sprintf('Draws-Phenotype123-Scale%d.mat', scale)
+writeMat(outFile, draws=draws, parNames=parNames)
