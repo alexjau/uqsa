@@ -16,7 +16,7 @@
 
 # Data references:
 # Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866 (phenotype 1)
-# O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2 and 3) 
+# O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2, 3 and 4) 
 
 
 loadTargets <- function(){
@@ -34,7 +34,7 @@ loadTargets <- function(){
   xtarget[[2]] <- B[,1]
   ytarget[[2]] <- B[,2]
   
-  # Fig 12.3C (phenotype 3)
+  # Fig 12.3C (phenotype 3 and 4)
   C1 <- read.csv('TargetsFig3/CaN-activation-by-Ca-30nmCaM.txt', sep='\t')
   C2 <- read.csv('TargetsFig3/CaN-activation-by-Ca-300nmCaM.txt', sep='\t')
   xtarget[[3]] <- C1[,1]
