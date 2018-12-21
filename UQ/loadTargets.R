@@ -15,8 +15,8 @@
 # GNU General Public License for more details.
 
 # Data references:
-# Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866 (phenotype 1)
-# O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2, 3 and 4) 
+# Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866 (phenotype 1, 3 and 4)
+# O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2) 
 
 
 loadTargets <- function(){
