@@ -15,10 +15,8 @@
 # GNU General Public License for more details.
 
 # Data references:
-# Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866.
-# O'Donnell SE et al. Proteins. 2011;79(3):765-786.
-# Shifman JM et al. PNAS USA. 2006;103(38):13968-13973.
-# Bradshaw JM et al. PNAS USA. 2003;100(18):10512-10517.
+# Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866 (phenotype 1)
+# O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2 and 3) 
 
 
 loadTargets <- function(){
@@ -26,17 +24,17 @@ loadTargets <- function(){
   xtarget <- list()
   ytarget <- list()
   
-  # Fig 3A
+  # Fig 12.3A (phenotype 1)
   A <-  read.csv('TargetsFig3/Ca_CaM_binding_hyperbolic.txt', sep='\t')
   xtarget[[1]] <- log10(A[,1])
   ytarget[[1]] <- A[,2]
   
-  # Fig 3B
+  # Fig 12.3B (phenotype 2)
   B = read.csv('TargetsFig3/CaN-CaM.txt', sep='\t')
   xtarget[[2]] <- B[,1]
   ytarget[[2]] <- B[,2]
   
-  # Fig 3C
+  # Fig 12.3C (phenotype 3)
   C1 <- read.csv('TargetsFig3/CaN-activation-by-Ca-30nmCaM.txt', sep='\t')
   C2 <- read.csv('TargetsFig3/CaN-activation-by-Ca-300nmCaM.txt', sep='\t')
   xtarget[[3]] <- C1[,1]
