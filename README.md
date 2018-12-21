@@ -8,4 +8,7 @@ The UQ folder contains R scripts to run the uncertainty quantification method (A
 
 Th SA folder contains MATLAB scripts to run global sensitivity analysis. A version of MATLAB later than 2014a is required. The main script to run is called get_predictions_do_SA.m and requires access to the file Draws-Phenotype123-Scale1000.mat which is available in the UQ folder. 
 
+The experimental data is extracted from the following references:
+Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866 (phenotype 1)
+O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2 and 3)
 
