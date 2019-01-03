@@ -25,18 +25,18 @@ loadTargets <- function(){
   ytarget <- list()
   
   # phenotype 1
-  A <-  read.csv('TargetsFig3/Ca_CaM_binding_hyperbolic.txt', sep='\t')
+  A <-  read.csv('Targets/Ca_CaM_binding_hyperbolic.txt', sep='\t')
   xtarget[[1]] <- log10(A[,1])
   ytarget[[1]] <- A[,2]
   
   # phenotype 2
-  B = read.csv('TargetsFig3/CaN-CaM.txt', sep='\t')
+  B = read.csv('Targets/CaN-CaM.txt', sep='\t')
   xtarget[[2]] <- B[,1]
   ytarget[[2]] <- B[,2]
   
   # phenotype 3 and 4
-  C1 <- read.csv('TargetsFig3/CaN-activation-by-Ca-30nmCaM.txt', sep='\t')
-  C2 <- read.csv('TargetsFig3/CaN-activation-by-Ca-300nmCaM.txt', sep='\t')
+  C1 <- read.csv('Targets/CaN-activation-by-Ca-30nmCaM.txt', sep='\t')
+  C2 <- read.csv('Targets/CaN-activation-by-Ca-300nmCaM.txt', sep='\t')
   xtarget[[3]] <- C1[,1]
   ytarget[[3]] <- C1[,2]
   xtarget[[4]] <- C2[,1]
