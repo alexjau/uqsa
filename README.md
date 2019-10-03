@@ -11,9 +11,11 @@ Th SA folder contains MATLAB scripts to run global sensitivity analysis. A versi
 The full ODE-model correponding to all phenotypes can be recieved from the correponding authors upon request.
 
 **Data references**
+
 The experimental data is extracted from the following references:<br/>
 Stemmer PM, Klee CB. Biochemistry. 1994;33(22):6859-6866 (phenotype 1, 3 and 4)<br/>
 O'Donnell SE et al. Proteins. 2011;79(3):765-786 (phenotype 2)
 
 **Acknowledgements**
+
 This open source software code was developed in part or in the Human Brain Project, funded from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under Specific Grant Agreements No. 720270 and No. 785907 (Human Brain Project SGA1 and SGA2).
