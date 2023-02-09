@@ -1,4 +1,7 @@
 # uqsa
+
+**Please note that the the continuous development of the code for Uncertainty Quantification and Sensitivity Analysis is now taking place at https://github.com/icpm-kth/uqsa.**
+
 Uncertainty Quantification (UQ) and Sensitivity Analysis (SA)
 
 The code distributed in this repository implements the methodology presented in the paper "Uncertainty quantification, propagation and
